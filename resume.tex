@@ -1,0 +1,260 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Original author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Modifications by:
+% Pranav Srinivasan <pranavsankars@g.ucla.edu>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, letterpaper]{awesome-cv}
+\usepackage{graphicx}
+
+% Configure page margins with geometry
+\geometry{left=0.5in, top=0.5in, right=0.5in, bottom=0.5in}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+%\colorlet{awesome}{awesome-darknight}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{profile}
+\name{}{Pranav Sankar Srinivasan}
+% \position{Software Engineer}
+% \address{address}
+
+\mobile{(805) 624-4604}
+\email{pranavsankars@g.ucla.edu}
+\homepage{pranavs2001.github.io}
+\github{pranavs2001}
+\linkedin{pranavsankars}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+% \vspace*{-0.35in}
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+% \vspace*{-0.1in}
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% \makecvfooter
+%   {\today}
+%   {Henry Trinh~~~·~~~Résumé}
+%   {\thepage}
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+
+% EDUCATION
+\cvsection{Education}
+\begin{cventries}
+  \cventry
+    {B.S. Computer Engineering, GPA 3.7/4.0} % Degree
+    {University of California, Los Angeles} % Institution
+    {Los Angeles, CA} % Location
+    {June 2023} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+      \item {\textbf{Honors} --- \entrydatestyle{Fast Track Honors Program, Dean’s Honor List}}
+        \item {\textbf{Relevant Coursework} --- \entrydatestyle{Data Structures \& Algorithms, Software Construction, Operating Systems, Computer Architecture, Internet of Things, Digital Logic Design}}
+      \end{cvitems}
+    }
+    %{
+    %  \vspace{-0.11in}
+    %  \begin{cvskills}
+    %  \item {\textbf{Relevant Coursework} --- \entrydatestyle{Data Structures and Algorithms, Software %Construction, Operating Systems, Computer Architecture, Internet of Things, \\Logic Design of Digital %Systems}}
+    %    \cvskill
+    %    {Relevant Courses} % Type
+    %      {Data Structures and Algorithms, Software Construction, Operating Systems, Computer %Architecture, Internet of Things, \\Logic Design of Digital Systems} % Skillset
+    %  \end{cvskills}
+    %}
+  \vspace{-0.2in}
+\end{cventries}
+
+% SKILLS
+\cvsection{Skills}
+\begin{cvskills}
+  \cvskill
+    {Languages} % Type
+    {JavaScript, C/C++, Python, Swift, HTML, CSS} % Skillset
+
+  \cvskill
+    {Frameworks + Tools} % Type
+    {React, Firebase, Bootstrap, Git, Postman, Node Package Manager, UIKit, Cocoapods} % Skillset
+  
+%  \cvskill
+%    {Technologies} % Type
+%    {Full Stack, iOS, Databases, Machine Learning, Computer Vision, SLAM} % Skillset
+    
+\end{cvskills}
+
+% EXPERIENCE
+\cvsection{Experience}
+\begin{cventries}
+  \cventry
+    {Software Engineer Intern} % Job title
+    {Tesla} % Organization
+    {Fremont, CA} % Location
+    {Summer 2021} % Date(s)
+    {
+      % \begin{cvitems} % Description(s) of tasks/responsibilities
+      %   \item {Interning in Fall 2021}
+      % \end{cvitems}
+    }
+  \vspace{-0.07in}
+
+  \cventry
+    {Undergraduate Researcher - HTML, CSS, Python, Flask} % Job title
+    {Robotics and Mechanisms Laboratory (RoMeLa)} % Organization
+    {Los Angeles, CA} % Location
+    {October 2019 - Present} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Developing website to interface with an autonomous cooking robot and using Flask to host the website locally on the central Raspberry Pi unit}
+        \item {Implemented serial communication capability between Raspberry Pi and Arduino to monitor sensor data}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%Leadership
+\cvsection{Leadership}
+
+\begin{cventries}
+  \cventry
+    {Executive Vice President} % Affiliation/role
+    {UCLA IEEE} % Organization/group
+    {Los Angeles, CA} % Location
+    {April 2020 - Present} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+        \item {Lead fundraising team to secure over \$7000 in sponsorships for the largest hardware hackathon in the west coast, IDEA Hacks}
+        \item {Scheduled and hosted industry events such as tech-talks, info sessions, and workshops with prominent industry partners for IEEE (300 members)}
+      \end{cvitems}
+    }
+\end{cventries}
+
+
+% PROJECTS
+\cvsection{Projects}
+\begin{cventries}
+  % \cventry
+  %   {} % Empty position
+  %   {Simultaneous Location and Mapping (SLAM) Tool} % Project
+  %   {} % Empty location
+  %   {} % Empty date
+  %   {
+  %     \vspace{-0.2in}
+  %     \begin{cvitems} % Description(s) bullet points
+  %       \item {Developed tool to generate a three-dimensional map of an environment by analyzing any given video}
+	% 	    \item {Performed video and image processing using OpenCV to extract features from images and render their points in 3-D space}
+  %     \end{cvitems}
+  %   }
+
+    \cventry
+        {JavaScript, React, Firebase, Postman, Chrome API} % Empty position
+        {Code Crumbs} % Project
+        {} % Empty location
+        {} % Empty date
+        {
+          % \vspace{-0.2in}
+          \begin{cvitems} % Description(s) bullet points
+          	\item {Developed Chrome extension that allows users to track search history in detail to aid the software development process}
+    		    \item {Implemented sign-in/login functionality using Firebase Authentication and capability to toggle the extension on/off}
+          \end{cvitems}
+        }
+
+  \cventry
+    {JavaScript, React, Python, Firebase, mealDB API} % Empty position
+    {\href{https://insta-chef-ba8dc.web.app}{Insta-Chef}} % Project
+    {} % Empty location
+    {} % Empty date
+    {
+      % \vspace{-0.2in}
+      \begin{cvitems} % Description(s) bullet points
+      	\item {Created web application that enables users to discover new culinary recipes by name or ingredient and track all items in kitchen}
+      	\item {Constructed React components to display various information and added front-end features to simplify the process of tracking ingredients}
+      \end{cvitems}
+    }
+    
+    \cventry
+    {JavaScript, Bootstrap, Spotify API} % Empty position
+    {\href{https://discovr.netlify.app}{DisCovr}} % Project
+    {} % Empty location
+    {} % Empty date
+    {
+      % \vspace{-0.2in}
+      \begin{cvitems} % Description(s) bullet points
+      	\item {Built a web application that enables Spotify users to find new songs not based on their prior listening history}
+		\item {Devised a song search query algorithm that randomly selects new songs efficiently and produced an intuitive interface for easy navigation of the app}
+      \end{cvitems}
+    }
+    
+    \cventry
+    {C, Arduino - Runner-up for “Sustainability Award” amongst 60 participating teams} % Empty position
+    {Power Shower} % Project
+    {} % Empty location
+    {} % Empty date
+    {
+      % \vspace{-0.2in}
+      \begin{cvitems} % Description(s) bullet points
+      	\item {Ideated and prototyped an IoT smart shower timer hub in 36-hour hackathon to raise awareness of water consumption in college dorms}
+		\item {Integrated Bluetooth communication between Arduinos to allow for devices to join the IoT ecosystem}
+		%\item {Runner-up for the “Sustainability Award” amongst 60 participating teams}
+      \end{cvitems}
+    }
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+\end{document}
